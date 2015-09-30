@@ -1,6 +1,9 @@
 <?php
   session_start();
-  $username = $_SESSION['user']
+  if (!isset($_SESSION['user'])){
+    header('Location:login.php');
+  }
+  $username = $_SESSION['user'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,7 +65,7 @@
                 <!-- /.dropdown -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                       <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                       <i class="fa fa-user fa-fw"></i> <?php echo $username ?> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                       <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
@@ -78,7 +81,7 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="dashboard.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="dashboard.php"><i class="fa fa-file-text-o fa-fw"></i> Artikel</a>
                         </li>
                         <li>
                             <a href="users.php"><i class="fa fa-user fa-fw"></i> Users</a>
