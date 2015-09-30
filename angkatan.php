@@ -19,23 +19,22 @@
     <title>Dashboard</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- MetisMenu CSS -->
-    <link href="bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+      <!-- MetisMenu CSS -->
+      <link href="bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
 
-    <!-- Timeline CSS -->
-    <link href="dist/css/timeline.css" rel="stylesheet">
+      <!-- Timeline CSS -->
+      <link href="dist/css/timeline.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="dist/css/sb-admin-2.css" rel="stylesheet">
 
-    <!-- Morris Charts CSS -->
-    <link href="bower_components/morrisjs/morris.css" rel="stylesheet">
+      <!-- Morris Charts CSS -->
+      <link href="bower_components/morrisjs/morris.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+      <!-- Custom Fonts -->
+      <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -58,7 +57,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Welcome</a>
+                <a class="navbar-brand" href="dashboard.php">Welcome</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -66,11 +65,11 @@
                 <!-- /.dropdown -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> <?php echo $username ?> <i class="fa fa-caret-down"></i>
+                       <i class="fa fa-user fa-fw"></i> <?php echo $username ?> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
+                      <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                      </li>
                     </ul>
                     <!-- /.dropdown-user -->
                 </li>
@@ -81,31 +80,31 @@
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li>
-                            <a href="dashboard.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="artikel.php"><i class="fa fa-file-text-o fa-fw"></i> Artikel</a>
-                        </li>
-                        <li>
-                          <a href="#"><i class="fa fa-male fa-fw"></i> Profil<span class="fa arrow"></span></a>
-                          <ul class="nav nav-second-level">
-                              <li>
-                                  <a href="dosen.php">Dosen</a>
-                              </li>
-                              <li>
-                                  <a href="angkatan.php">Angkatan</a>
-                              </li>
-                              <li>
-                                  <a href="visimisi.php">Visi Misi</a>
-                              </li>
-                          </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="users.php"><i class="fa fa-users fa-fw"></i> Users</a>
-                        </li>
-                      </ul>
+                      <li>
+                          <a href="dashboard.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                      </li>
+                      <li>
+                          <a href="artikel.php"><i class="fa fa-file-text-o fa-fw"></i> Artikel</a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-male fa-fw"></i> Profil<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                          <li>
+                              <a href="dosen.php">Dosen</a>
+                          </li>
+                          <li>
+                              <a href="angkatan.php">Angkatan</a>
+                          </li>
+                          <li>
+                              <a href="visimisi.php">Visi Misi</a>
+                          </li>
+                        </ul>
+                          <!-- /.nav-second-level -->
+                      </li>
+                      <li>
+                          <a href="users.php"><i class="fa fa-users fa-fw"></i> Users</a>
+                      </li>
+                    </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
             </div>
@@ -659,21 +658,21 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+     <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+     <!-- Bootstrap Core JavaScript -->
+     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+     <!-- Metis Menu Plugin JavaScript -->
+     <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
 
-    <!-- Morris Charts JavaScript -->
-    <script src="bower_components/raphael/raphael-min.js"></script>
-    <script src="bower_components/morrisjs/morris.min.js"></script>
-    <script src="js/morris-data.js"></script>
+     <!-- Morris Charts JavaScript -->
+     <script src="bower_components/raphael/raphael-min.js"></script>
+     <script src="bower_components/morrisjs/morris.min.js"></script>
+     <script src="js/morris-data.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="dist/js/sb-admin-2.js"></script>
+     <!-- Custom Theme JavaScript -->
+     <script src="dist/js/sb-admin-2.js"></script>
 
 </body>
 

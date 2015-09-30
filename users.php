@@ -80,15 +80,30 @@
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li>
-                            <a href="dashboard.php"><i class="fa fa-file-text-o fa-fw"></i> Artikel</a>
-                        </li>
-                        <li>
-                            <a href="profil.php"><i class="fa fa-male fa-fw"></i> Profil</a>
-                        </li>
-                        <li>
-                            <a href="users.php"><i class="fa fa-users fa-fw"></i> Users</a>
-                        </li>
+                      <li>
+                          <a href="dashboard.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                      </li>
+                      <li>
+                          <a href="artikel.php"><i class="fa fa-file-text-o fa-fw"></i> Artikel</a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-male fa-fw"></i> Profil<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                          <li>
+                              <a href="dosen.php">Dosen</a>
+                          </li>
+                          <li>
+                              <a href="angkatan.php">Angkatan</a>
+                          </li>
+                          <li>
+                              <a href="visimisi.php">Visi Misi</a>
+                          </li>
+                        </ul>
+                          <!-- /.nav-second-level -->
+                      </li>
+                      <li>
+                          <a href="users.php"><i class="fa fa-users fa-fw"></i> Users</a>
+                      </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
