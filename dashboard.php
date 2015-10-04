@@ -88,6 +88,9 @@
                             <a href="artikel.php"><i class="fa fa-file-text-o fa-fw"></i> Artikel</a>
                         </li>
                         <li>
+                            <a href="materikuliah.php"><i class="fa fa-file-archive-o fa-fw"></i> Materi Kuliah</a>
+                        </li>
+                        <li>
                           <a href="#"><i class="fa fa-male fa-fw"></i> Profil<span class="fa arrow"></span></a>
                           <ul class="nav nav-second-level">
                               <li>
@@ -95,9 +98,6 @@
                               </li>
                               <li>
                                   <a href="angkatan.php">Angkatan</a>
-                              </li>
-                              <li>
-                                  <a href="visimisi.php">Visi Misi</a>
                               </li>
                           </ul>
                             <!-- /.nav-second-level -->

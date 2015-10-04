@@ -114,23 +114,22 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Dosen</h1>
+                    <h1 class="page-header">Materi Kuliah</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
+            <!-- /.panel-heading -->
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel-body">
-                        <a href="tambahartikel.php"><i class="fa fa-plus fa-fw"></i> Tambah Dosen</a><br><br>
+                        <a href="tambahartikel.php"><i class="fa fa-plus fa-fw"></i> Tambah Materi</a><br><br>
                         <div class="dataTable_wrapper">
                             <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
                                     <tr>
-                                        <th>Nama</th>
-                                        <th>No Telepon</th>
-                                        <th>Bidang</th>
-                                        <th>Alamat</th>
+                                        <th>Judul Materi</th>
+                                        <th>Nama Penulis</th>
                                         <th>Email</th>
                                         <th>Tindakan</th>
                                     </tr>
@@ -139,13 +138,11 @@
                                     <?php
                                         include 'database.php';
                                         $pdo = Database::connect();
-                                        $sql = 'Select * From profil_dosen';
+                                        $sql = 'Select * From post_materi';
                                         foreach ($pdo->query($sql) as $row) {
                                             echo '<tr class="even gradeA">';
+                                            echo '<td>'. $row['Topik'] .'</td>';
                                             echo '<td>'. $row['Nama'] .'</td>';
-                                            echo '<td>'. $row['Telepon'] .'</td>';
-                                            echo '<td>'. $row['Bidang'] .'</td>';
-                                            echo '<td>'. $row['Alamat'] .'</td>';
                                             echo '<td>'. $row['Email'] .'</td>';
                                             echo '<td class="center"><a href="users.php"><i class="fa fa-edit fa-fw"></i>Edit</a><a href="users.php"><i class="fa fa-close fa-fw"></i>Hapus</a></td>';
                                             echo '</tr>';
