@@ -16,7 +16,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard</title>
+    <title>Users</title>
 
     <!-- Bootstrap Core CSS -->
       <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -102,6 +102,18 @@
                           <!-- /.nav-second-level -->
                       </li>
                       <li>
+                          <a href="dokumentasi.php"><i class="fa fa-file fa-fw"></i> Dokumentasi</a>
+                      </li>
+                      <li>
+                          <a href="penelitian.php"><i class="fa fa-files-o fa-fw"></i> Penelitian</a>
+                      </li>
+                      <li>
+                          <a href="pengabdian.php"><i class="fa fa-link fa-fw"></i> Pengabdian</a>
+                      </li>
+                      <li>
+                          <a href="publikasi.php"><i class="fa fa-share-alt-square fa-fw"></i> Publikasi</a>
+                      </li>
+                      <li>
                           <a href="users.php"><i class="fa fa-users fa-fw"></i> Users</a>
                       </li>
                     </ul>
@@ -120,10 +132,40 @@
                    <!-- /.col-lg-12 -->
                </div>
                <!-- /.row -->
+               <div class="row">
+                   <div class="col-lg-12">
+                       <div class="panel-body">
+                           <a href="tambahartikel.php"><i class="fa fa-plus fa-fw"></i> Tambah Artikel</a><br><br>
+                           <div class="dataTable_wrapper">
+                               <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                   <thead>
+                                       <tr>
+                                           <th>Username</th>
+                                           <th>Password</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                       <?php
+                                           include 'database.php';
+                                           $pdo = Database::connect();
+                                           $sql = 'Select * From admin';
+                                           foreach ($pdo->query($sql) as $row) {
+                                               echo '<tr class="even gradeA">';
+                                               echo '<td>'. $row['username'] .'</td>';
+                                               echo '<td>'. $row['password'] .'</td>';
+                                               echo '</tr>';
+                                           }
+                                       ?>
+                                   </tbody>
+                               </table>
+                           </div>
+                           <!-- /.table-responsive -->
+                       </div>
+                       <!-- /.panel-body -->
+                   </div>
+               </div>
            </div>
-           <!-- /.container-fluid -->
-        </div>
-        <!-- /#page-wrapper -->
+           <!-- /#page-wrapper -->
 
     </div>
     <!-- /#wrapper -->

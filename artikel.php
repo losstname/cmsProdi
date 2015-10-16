@@ -16,7 +16,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard</title>
+    <title>Artikel</title>
 
     <!-- Bootstrap Core CSS -->
       <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -102,6 +102,18 @@
                           <!-- /.nav-second-level -->
                       </li>
                       <li>
+                          <a href="dokumentasi.php"><i class="fa fa-file fa-fw"></i> Dokumentasi</a>
+                      </li>
+                      <li>
+                          <a href="penelitian.php"><i class="fa fa-files-o fa-fw"></i> Penelitian</a>
+                      </li>
+                      <li>
+                          <a href="pengabdian.php"><i class="fa fa-link fa-fw"></i> Pengabdian</a>
+                      </li>
+                      <li>
+                          <a href="publikasi.php"><i class="fa fa-share-alt-square fa-fw"></i> Publikasi</a>
+                      </li>
+                      <li>
                           <a href="users.php"><i class="fa fa-users fa-fw"></i> Users</a>
                       </li>
                     </ul>
@@ -146,7 +158,7 @@
                                             echo '<td>'. $row['Nama'] .'</td>';
                                             echo '<td>'. $row['Telepon'] .'</td>';
                                             echo '<td>'. $row['Email'] .'</td>';
-                                            echo '<td class="center"><a href="users.php"><i class="fa fa-edit fa-fw"></i>Edit</a><a href="users.php"><i class="fa fa-close fa-fw"></i>Hapus</a></td>';
+                                            echo '<td class="center"><a href="editartikel.php?id='.$row['id'].'"><i class="fa fa-edit fa-fw"></i>Edit</a><a href="deleteartikel.php?id='.$row['id'].'"><i class="fa fa-close fa-fw"></i>Hapus</a></td>';
                                             echo '</tr>';
                                         }
                                     ?>

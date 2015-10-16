@@ -16,7 +16,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard</title>
+    <title>Dosen</title>
 
     <!-- Bootstrap Core CSS -->
       <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -102,6 +102,18 @@
                           <!-- /.nav-second-level -->
                       </li>
                       <li>
+                          <a href="dokumentasi.php"><i class="fa fa-file fa-fw"></i> Dokumentasi</a>
+                      </li>
+                      <li>
+                          <a href="penelitian.php"><i class="fa fa-files-o fa-fw"></i> Penelitian</a>
+                      </li>
+                      <li>
+                          <a href="pengabdian.php"><i class="fa fa-link fa-fw"></i> Pengabdian</a>
+                      </li>
+                      <li>
+                          <a href="publikasi.php"><i class="fa fa-share-alt-square fa-fw"></i> Publikasi</a>
+                      </li>
+                      <li>
                           <a href="users.php"><i class="fa fa-users fa-fw"></i> Users</a>
                       </li>
                     </ul>
@@ -122,7 +134,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel-body">
-                        <a href="tambahartikel.php"><i class="fa fa-plus fa-fw"></i> Tambah Dosen</a><br><br>
+                        <a href="tambahdosen.php"><i class="fa fa-plus fa-fw"></i> Tambah Dosen</a><br><br>
                         <div class="dataTable_wrapper">
                             <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
@@ -147,7 +159,7 @@
                                             echo '<td>'. $row['Bidang'] .'</td>';
                                             echo '<td>'. $row['Alamat'] .'</td>';
                                             echo '<td>'. $row['Email'] .'</td>';
-                                            echo '<td class="center"><a href="users.php"><i class="fa fa-edit fa-fw"></i>Edit</a><a href="users.php"><i class="fa fa-close fa-fw"></i>Hapus</a></td>';
+                                            echo '<td class="center"><a href="editdosen.php?id='.$row['id'].'"><i class="fa fa-edit fa-fw"></i>Edit</a><a href="deletedosen.php?id='.$row['id'].'"><i class="fa fa-close fa-fw"></i>Hapus</a></td>';
                                             echo '</tr>';
                                         }
                                     ?>

@@ -103,6 +103,18 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
+                            <a href="dokumentasi.php"><i class="fa fa-file fa-fw"></i> Dokumentasi</a>
+                        </li>
+                        <li>
+                            <a href="penelitian.php"><i class="fa fa-files-o fa-fw"></i> Penelitian</a>
+                        </li>
+                        <li>
+                            <a href="pengabdian.php"><i class="fa fa-link fa-fw"></i> Pengabdian</a>
+                        </li>
+                        <li>
+                            <a href="publikasi.php"><i class="fa fa-share-alt-square fa-fw"></i> Publikasi</a>
+                        </li>
+                        <li>
                             <a href="users.php"><i class="fa fa-users fa-fw"></i> Users</a>
                         </li>
                       </ul>
