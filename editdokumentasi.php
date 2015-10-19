@@ -231,7 +231,7 @@
                     <div class="control-group form-group">
                         <div class="controls">
                           <label>Keterangan :</label>
-                          <textarea rows="10" cols="100" id="message" name="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"><?php echo !empty($message)?$message:'';?></textarea>
+                          <textarea rows="10" cols="100" id="message" name="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"><?php echo !empty($keterangan)?$keterangan:'';?></textarea>
                         </div>
                     </div>
                     <div id="success"></div>
